@@ -51,8 +51,8 @@ SWEP.ScopeChopPos = false
 SWEP.ScopeChopAngle = false
 SWEP.WeaponBone = false
 
-SWEP.MinInaccuracy = 1
-SWEP.MaxInaccuracy = 7
+SWEP.MinInaccuracy = 0.33
+SWEP.MaxInaccuracy = 6
 SWEP.Inaccuracy = SWEP.MaxInaccuracy
 SWEP.InaccuracyDecay = 0.13
 SWEP.AccuracyDecay = 0.3
@@ -83,17 +83,30 @@ function SWEP:InitBulletData()
 	
 	self.BulletData = {}
     
-    self.BulletData["Colour"]		= Color(255, 255, 255)
-    self.BulletData["Data10"]		= "0.00"
-    self.BulletData["Data5"]		= "428.64"
-    self.BulletData["Data6"]		= "42.02"
-    self.BulletData["Data7"]		= "Dumb"
-    self.BulletData["Data8"]		= "Contact"
-    self.BulletData["Data9"]		= "2x FIM-92"
-    self.BulletData["Id"]		    = "70mmFFAR"
-    self.BulletData["ProjLength"]	= "17.02"
-    self.BulletData["PropLength"]	= "7.88"
-    self.BulletData["Type"]		    = "HEAT"
+    -- self.BulletData["Colour"]		= Color(255, 255, 255)
+    -- self.BulletData["Data10"]		= "0.00"
+    -- self.BulletData["Data5"]		= "428.64"
+    -- self.BulletData["Data6"]		= "42.02"
+    -- self.BulletData["Data7"]		= "Dumb"
+    -- self.BulletData["Data8"]		= "Contact"
+    -- self.BulletData["Data9"]		= "2x FIM-92"
+    -- self.BulletData["Id"]		    = "70mmFFAR"
+    -- self.BulletData["ProjLength"]	= "17.02"
+    -- self.BulletData["PropLength"]	= "7.88"
+    -- self.BulletData["Type"]		    = "HEAT"
+    
+self.BulletData["Colour"]		= Color(255, 255, 255)
+self.BulletData["Data10"]		= "0.00"
+self.BulletData["Data5"]		= "946.67"
+self.BulletData["Data6"]		= "48.41"
+self.BulletData["Data7"]		= "Dumb"
+self.BulletData["Data8"]		= "Contact"
+self.BulletData["Data9"]		= "4x FIM-92"
+self.BulletData["Id"]		= "PG-7V SWEP"
+self.BulletData["ProjLength"]		= "22.80"
+self.BulletData["PropLength"]		= "2.20"
+self.BulletData["Type"]		= "HEAT"
+
     self.BulletData.Sound = "acf_extra/airfx/javelin.wav"
     
     self.BulletData.IsShortForm     = true
