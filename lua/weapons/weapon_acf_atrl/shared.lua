@@ -78,7 +78,7 @@ SWEP.FlashClass = "AC"
 SWEP.Launcher = true
 SWEP.IsGrenadeWeapon	= true
 
-SWEP.RecoilScale = 1.8
+SWEP.RecoilScale = 1.2
 SWEP.RecoilDamping = 0.12
 
 
