@@ -38,10 +38,10 @@ function SWEP:FireBullet()
     
     local bdata = missile.BulletData
             
-    bdata.Pos = MuzzlePos
+    bdata.Pos = MuzzlePos2
     bdata.Flight = MuzzleVecFinal
     
-    missile:DoFlight(MuzzlePos, MuzzleVecFinal)
+    missile:DoFlight(MuzzlePos2, MuzzleVecFinal)
     
     missile:Launch()
 	

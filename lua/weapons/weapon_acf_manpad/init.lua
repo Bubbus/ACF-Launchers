@@ -20,6 +20,7 @@ function SWEP:FireBullet()
 	local MuzzlePos = self.Owner:GetShootPos()
 	local MuzzleVec = self.Owner:GetAimVector()
 	local angs = self.Owner:EyeAngles()	
+	
 	local MuzzlePos2 = MuzzlePos + angs:Forward() * self.AimOffset.x + angs:Right() * self.AimOffset.y
 	local MuzzleVecFinal = self:inaccuracy(MuzzleVec, self.Inaccuracy) + Vector(0,0,0.04)
 	
@@ -38,10 +39,10 @@ function SWEP:FireBullet()
     
     local bdata = missile.BulletData
             
-    bdata.Pos = MuzzlePos
+    bdata.Pos = MuzzlePos2
     bdata.Flight = MuzzleVecFinal
     
-    missile:DoFlight(MuzzlePos, MuzzleVecFinal)
+    missile:DoFlight(MuzzlePos2, MuzzleVecFinal)
     
     missile:Launch()
 	

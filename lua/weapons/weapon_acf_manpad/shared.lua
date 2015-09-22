@@ -78,8 +78,10 @@ SWEP.FlashClass = "AC"
 SWEP.Launcher = true
 SWEP.IsGrenadeWeapon	= true
 
-SWEP.RecoilScale = 1
-SWEP.RecoilDamping = 0.12
+SWEP.RecoilScale = 0.6
+SWEP.RecoilDamping = 0.25
+
+SWEP.AimOffset = Vector(16,8,0)
 
 
 function SWEP:InitBulletData()
